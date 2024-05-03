@@ -1,21 +1,13 @@
 # Template file for 'anki'
 pkgname=anki
-version=2.1.15
-revision=7
-build_style=gnu-makefile
-depends="python3-PyQt5-webengine python3-requests python3-SQLAlchemy
- python3-PyAudio python3-mpv python3-Markdown python3-send2trash
- python3-BeautifulSoup4 python3-decorator python3-jsonschema"
+version=24.04.1
+revision=1
+build_style=cargo
+makedepends="pkg-config openssl-devel libzstd-devel git"
 short_desc="Spaced repetition flashcard program"
-maintainer="Orphaned <orphan@voidlinux.org>"
+maintainer="Clos3y <sam.w.close@gmail.com>"
 license="AGPL-3.0-or-later"
 homepage="https://apps.ankiweb.net"
-changelog="https://apps.ankiweb.net/docs/changes.html"
-distfiles="https://apps.ankiweb.net/downloads/archive/anki-$version-source.tgz"
-checksum=5a53760164c77d619f55107a13099cffe620566a7f610b61b6c4b52487f3bb89
-
-python_version=3
-
-post_install() {
-	vlicense LICENSE
-}
+changelog="https://github.com/ankitects/anki/releases"
+distfiles="https://github.com/ankitects/${pkgname}/archive/refs/tags/${version}.tar.gz"
+checksum=7cebd7745830392f9b6ec62c2300f3c45c934969b47f25275ecee0ee53f9aa68
