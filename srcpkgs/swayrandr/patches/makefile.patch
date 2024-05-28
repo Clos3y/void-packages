@@ -1,0 +1,8 @@
+--- ./Makefile	2024-05-28 21:28:20.324771728 +0000
++++ ./Makefile	2024-05-28 21:28:32.330608184 +0000
+@@ -1,4 +1,4 @@
+-VERSION=v$(shell git describe --tags --always)
++VERSION=v1.0
+ BUILDVARS=-X 'main.Version=$(VERSION)' -X 'main.BuildDate=$(shell date)' -X 'main.BuildWith=$(shell go version)'
+ GLADEVAR=-X 'main.GladeString=$(shell sed 's/\"/\\\"/g' ui.glade)'
+ DESTDIR ?=

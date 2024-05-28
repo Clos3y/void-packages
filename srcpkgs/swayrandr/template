@@ -1,0 +1,19 @@
+# Template file for 'swayrandr'
+pkgname=swayrandr
+version=1.0
+revision=1
+build_style=gnu-makefile
+makedepends="go"
+short_desc="Set-up monitors for sway tiling window manager (command line tool)"
+maintainer="Clos3y <sam.w.close@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://codeberg.org/snaums/swayrandr"
+distfiles="${homepage}/archive/${version}.tar.gz"
+checksum=184ba4762cc89e04489b41d33771f3defb4355f8242effc2d8b1ea8fcda29356
+nopie=yes
+
+do_install() {
+
+	vbin swayrandr
+
+}
