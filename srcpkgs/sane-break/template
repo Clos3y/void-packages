@@ -1,0 +1,13 @@
+# Template file for 'sane-break'
+pkgname=sane-break
+version=0.5.2
+revision=1
+build_style=cmake
+build_helper=cmake-wxWidgets-gtk3
+makedepends="qt6-base-devel qt6-multimedia-devel layer-shell-qt-devel qt6-wayland-devel libXScrnSaver-devel pkg-config"
+short_desc="Gentle break reminder that helps you avoid mindlessly skipping breaks"
+maintainer="clos3y <sam.w.close@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/AllanChain/sane-break"
+distfiles="https://github.com/AllanChain/sane-break/archive/refs/tags/v${version}.tar.gz"
+checksum=b9dabfaa9a7ed8c20eb12c3606310dcfc763f956bdcf45510c18ca10c4ed4c3a
