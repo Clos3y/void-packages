@@ -1,0 +1,17 @@
+# Template file for 'cadabra2'
+pkgname=cadabra2
+version=2.5.10
+revision=1
+build_style=cmake
+build_helper="python3 numpy"
+hostmakedepends="python3-devel pkg-config glibmm-devel sqlite-devel boost-devel openssl-devel gmp-devel gmpxx-devel gtkmm-devel git"
+depends="python3-gmpy2 python3-sympy python3-numpy"
+checkdepends=$depends
+short_desc="Field-theory motivated approach to computer algebra"
+maintainer="clos3y <sam.w.close@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://cadabra.science"
+changelog="https://cadabra.science/changelog.html"
+distfiles="https://github.com/kpeeters/cadabra2/archive/refs/tags/${version}.tar.gz"
+checksum=d08bc3a159c677263a4e7ec6823b8e7cef04d540e1a540e1da1ef70c16f6abc7
+make_check="ci-skip" # cyclic dependencies
