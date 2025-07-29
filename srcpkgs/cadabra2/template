@@ -1,0 +1,24 @@
+# Template file for 'cadabra2'
+pkgname=cadabra2
+version=2.5.12
+revision=1
+#archs="i686 x86_64"
+#build_wrksrc=
+build_style=cmake
+configure_args="-DPACKAGING_MODE=ON -DCMAKE_INSTALL_PREFIX=/usr"
+#make_build_args=""
+#make_install_args=""
+#conf_files=""
+#make_dirs="/var/log/dir 0755 root root"
+hostmakedepends="python3-devel pkg-config glibmm-devel sqlite-devel boost-devel openssl-devel gmp-devel gmpxx-devel git fontconfig-devel cairo-devel pango-devel gtkmm-devel"
+#makedepends=""
+depends="python3-matplotlib python3-sympy"
+checkdepends="python3-gmpy2 python3-numpy python3-sympy"
+short_desc="A field-theory motivated approach to computer algebra"
+#maintainer=" <>"
+license="GPL-3.0-or-later"
+homepage="https://cadabra.science"
+#changelog=""
+distfiles="https://github.com/kpeeters/cadabra2/archive/refs/tags/${version}.tar.gz"
+checksum=c61d818e171e776c4531e5b271d8c0530815ce1be523e3b2d72512d071ac68ff
+shlib_provides="cadabra2.so"
